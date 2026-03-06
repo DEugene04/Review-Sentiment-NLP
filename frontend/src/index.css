@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 220 20% 14%;
+
+    --card: 40 15% 99%;
+    --card-foreground: 220 20% 14%;
+
+    --popover: 40 15% 99%;
+    --popover-foreground: 220 20% 14%;
+
+    --primary: 100 30% 72%;
+    --primary-foreground: 220 20% 14%;
+
+    --secondary: 260 55% 75%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 100 18% 92%;
+    --muted-foreground: 220 10% 46%;
+
+    --accent: 260 55% 75%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 72% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 40 15% 90%;
+    --input: 40 15% 90%;
+    --ring: 260 55% 75%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 40 20% 96%;
+    --sidebar-foreground: 220 20% 14%;
+    --sidebar-primary: 100 30% 72%;
+    --sidebar-primary-foreground: 220 20% 14%;
+    --sidebar-accent: 260 55% 75%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 40 15% 90%;
+    --sidebar-ring: 260 55% 75%;
+
+    /* Custom tokens */
+    --sage: 100 30% 72%;
+    --sage-light: 100 25% 88%;
+    --sage-dark: 100 25% 58%;
+    --lavender: 260 55% 75%;
+    --lavender-light: 260 45% 92%;
+    --lavender-foreground: 260 40% 30%;
+    --surface-glass: 40 20% 99%;
+    --shadow-soft: 0 0% 0% / 0.04;
+    --shadow-card: 0 0% 0% / 0.06;
+  }
+
+  .dark {
+    --background: 220 20% 8%;
+    --foreground: 40 15% 92%;
+    --card: 220 18% 12%;
+    --card-foreground: 40 15% 92%;
+    --popover: 220 18% 12%;
+    --popover-foreground: 40 15% 92%;
+    --primary: 100 30% 72%;
+    --primary-foreground: 220 20% 14%;
+    --secondary: 260 55% 75%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 55%;
+    --accent: 260 55% 75%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 260 55% 75%;
+    --sidebar-background: 220 20% 10%;
+    --sidebar-foreground: 40 15% 92%;
+    --sidebar-primary: 100 30% 72%;
+    --sidebar-primary-foreground: 220 20% 14%;
+    --sidebar-accent: 260 55% 75%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 260 55% 75%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Space Grotesk", sans-serif;
+  }
+}
